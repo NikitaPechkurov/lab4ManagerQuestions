@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="752.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TableView fx:id="table" layoutX="5.0" layoutY="93.0" prefHeight="405.0" prefWidth="742.0">
+         <columns>
+            <TableColumn fx:id="questId" prefWidth="75.0" text="id" />
+            <TableColumn fx:id="questQuest" prefWidth="250.0" text="Вопрос" />
+            <TableColumn fx:id="questLastname" prefWidth="96.0" text="Фамилия слуш" />
+            <TableColumn fx:id="questAnswer" prefWidth="213.0" text="Ответ" />
+            <TableColumn fx:id="questComm" prefWidth="107.0" text="Коммент" />
+         </columns></TableView>
+      <TextField fx:id="findTextField" layoutX="15.0" layoutY="43.0" prefHeight="25.0" prefWidth="527.0" />
+      <Button fx:id="findButton" layoutX="570.0" layoutY="43.0" mnemonicParsing="false" onAction="#findQuestion" prefHeight="25.0" prefWidth="56.0" text="Найти" />
+      <Label layoutX="340.0" layoutY="14.0" prefHeight="16.0" prefWidth="107.0" text="Поиск вопроса">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="fillButton" layoutX="655.0" layoutY="43.0" mnemonicParsing="false" onAction="#fillTable" prefHeight="25.0" prefWidth="80.0" text="Заполнить" />
+   </children>
+</AnchorPane>
